@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Checkout.Repository\Checkout.Repository.csproj" />
+    <ProjectReference Include="..\CommandContracts\Checkout.Command.Contracts.csproj" />
+    <ProjectReference Include="..\Common\Checkout.Common.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.suo
+/.vs/Checkout/v17/TestStore/0/000.testlog
+/src/Checkout.Api/bin/Debug/net6.0
+/src/Checkout.Api/obj
+/src/Checkout.Application/bin/Debug/net6.0
+/src/Checkout.Application/obj
+/src/Checkout.Application.Query/bin/Debug/net6.0
+/src/Checkout.Application.Query/obj
+/src/Checkout.Repository/bin/Debug/net6.0
+/src/Checkout.Repository/obj
+/src/CheckoutTests/obj
+/src/CommandContracts/bin/Debug/net6.0
+/src/CommandContracts/obj
+/src/Commands/bin/Debug/net6.0
+/src/Commands/obj
+/src/Common/bin/Debug/net6.0
+/src/Common/obj/Debug/net6.0
+/src/Common/obj
+/tests/bin/Debug/net6.0
+/tests/obj
+/.vs/Checkout
