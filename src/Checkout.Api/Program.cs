@@ -24,11 +24,11 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddValidatorsFromAssemblyContaining<BasketRequestValidator>();
 
 
-builder.Services.AddScoped<IBasketRepository, BasketRepository>();
-builder.Services.AddScoped<IBasketApplication, BasketApplication>();
-builder.Services.AddScoped<ICreateBasketCommand, CreateBasketCommand>();
-builder.Services.AddScoped<IAddArticleCommand, AddArticleCommand>();
-builder.Services.AddScoped<ICloseBasketCommand, CloseBasketCommand>();
+builder.Services.AddTransient<IBasketRepository, BasketRepository>();
+builder.Services.AddTransient<IBasketApplication, BasketApplication>();
+builder.Services.AddTransient<ICreateBasketCommand, CreateBasketCommand>();
+builder.Services.AddTransient<IAddArticleCommand, AddArticleCommand>();
+builder.Services.AddTransient<ICloseBasketCommand, CloseBasketCommand>();
 
 builder.Services.AddDbContext<BasketContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));

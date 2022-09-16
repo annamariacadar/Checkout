@@ -22,7 +22,7 @@ namespace Checkout.Repository
 
         public async Task<Basket> GetBasketAsync(int basketid)
         {
-            var basket = await _dbContext.Baskets.Include(basket => basket.Articles).FirstOrDefaultAsync(e => e.Id == basketid);
+            var basket = await _dbContext.Baskets.Include(basket => basket.Articles).AsNoTracking().FirstOrDefaultAsync(e => e.Id == basketid);
             if (basket == null)
             {
                 throw new BasketNotFoundException(basketid.ToString(), "BasketNotFound");
